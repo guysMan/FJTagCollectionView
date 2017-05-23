@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
     s.resources    = "FJTagCollectionView/**/*.{xib,png}"
     s.requires_arc = true
     s.dependency   'JSONModel'
+    s.dependency   'BlocksKit'
 end
