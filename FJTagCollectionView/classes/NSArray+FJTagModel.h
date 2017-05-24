@@ -20,7 +20,10 @@
 // 是否包含TagModel (判断tag名称)
 - (BOOL)containsTagModelThruTagName:(FJTagModel *)tagModel;
 
-// 删除TagModel
+// 删除TagModel (判断内存)
 - (void)removeTagModel:(FJTagModel *)tagModel;
+
+// 删除TagModel (判断名称)
+- (void)removeTagModelThruTagName:(FJTagModel *)tagModel;
 
 @end
