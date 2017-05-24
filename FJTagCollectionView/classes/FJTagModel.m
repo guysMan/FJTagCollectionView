@@ -11,6 +11,7 @@
 @interface FJTagModel()
 
 @property (nonatomic, copy) NSString *name;
+@property (copy, nonatomic) NSString *pName;
 
 @end
 
@@ -24,11 +25,17 @@
 }
 
 - (NSString *)tag {
-    
     if (self.name == nil) {
         assert(@"请实现FJTagModel继承类的tag方法，返回tag名称");
     }
     return self.name;
+}
+
+- (NSString *)pTag {
+    if (self.pName == nil) {
+        assert(@"请实现FJTagModel继承类的pTag方法，返回pTag名称");
+    }
+    return self.pName;
 }
 
 + (BOOL)propertyIsOptional:(NSString *)propertyName {
