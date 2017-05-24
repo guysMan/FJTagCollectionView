@@ -14,8 +14,11 @@
 // 是否包含Tag名称
 - (BOOL)containsTagName:(NSString *)tag;
 
-// 是否包含TagModel
+// 是否包含TagModel (判断内存)
 - (BOOL)containsTagModel:(FJTagModel *)tagModel;
+
+// 是否包含TagModel (判断tag名称)
+- (BOOL)containsTagModelThruTagName:(FJTagModel *)tagModel;
 
 // 删除TagModel
 - (void)removeTagModel:(FJTagModel *)tagModel;

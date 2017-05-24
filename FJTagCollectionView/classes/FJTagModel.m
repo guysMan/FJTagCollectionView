@@ -31,13 +31,6 @@
     return self.name;
 }
 
-- (NSString *)pTag {
-    if (self.pName == nil) {
-        assert(@"请实现FJTagModel继承类的pTag方法，返回pTag名称");
-    }
-    return self.pName;
-}
-
 + (BOOL)propertyIsOptional:(NSString *)propertyName {
     return YES;
 }

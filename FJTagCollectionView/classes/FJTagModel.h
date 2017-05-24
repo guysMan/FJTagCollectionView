@@ -15,11 +15,8 @@
 + (FJTagModel*)tagName:(NSString *)tagName;
 
 // 子类继承实现
-
-// 子节点
+// 节点名称
 - (NSString *)tag;
-// 完整节点
-- (NSString *)pTag;
 
 @end
 

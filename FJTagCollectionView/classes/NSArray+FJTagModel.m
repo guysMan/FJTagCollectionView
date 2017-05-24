@@ -20,8 +20,18 @@
     return NO;
 }
 
-// 是否包含TagModel
+// 是否包含TagModel (判断内存)
 - (BOOL)containsTagModel:(FJTagModel *)tagModel {
+    for (FJTagModel *tgModel in self) {
+        if ([tgModel isEqual:tagModel]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+// 是否包含TagModel (判断tag名称)
+- (BOOL)containsTagModelThruTagName:(FJTagModel *)tagModel {
     for (FJTagModel *tgModel in self) {
         if ([[tgModel tag] isEqualToString:[tagModel tag]]) {
             return YES;
