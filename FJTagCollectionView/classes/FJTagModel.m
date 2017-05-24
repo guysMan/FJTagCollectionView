@@ -11,7 +11,6 @@
 @interface FJTagModel()
 
 @property (nonatomic, copy) NSString *name;
-@property (copy, nonatomic) NSString *pName;
 
 @end
 
