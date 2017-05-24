@@ -42,11 +42,16 @@
 
 // 删除TagModel
 - (void)removeTagModel:(FJTagModel *)tagModel {
+    if ([self containsTagModel:tagModel]) {
+        [(NSMutableArray*)self removeObject:tagModel];
+    }
+    /*
     for (int i = (int)[self count] - 1; i >=0; i--) {
         if ([[(FJTagModel *)[self objectAtIndex:i] tag] isEqualToString:[tagModel tag]]) {
             [(NSMutableArray*)self removeObjectAtIndex:i];
         }
     }
+     */
 }
 
 @end
